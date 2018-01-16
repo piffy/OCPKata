@@ -48,6 +48,8 @@ public class TellerTest {
     public void testThrees() {
         Teller t= new ConcreteTeller();
         t= new Three(t);
+        assertEquals("1",t.say(1));
+        assertEquals("2",t.say(2));
         assertEquals("Fizz",t.say(3));
         assertEquals("Fizz",t.say(6));
     }
@@ -56,8 +58,27 @@ public class TellerTest {
     public void testFives() {
         Teller t= new ConcreteTeller();
         t= new Five(t);
+        assertEquals("1",t.say(1));
+        assertEquals("2",t.say(2));
         assertEquals("Buzz",t.say(5));
         assertEquals("Buzz",t.say(10));
     }
+    
+     @Test
+    public void testBoth1() {
+        Teller t= new ConcreteTeller();
+        t= new Three(t);
+        t= new Five(t);
+        assertEquals("1",t.say(1));
+        assertEquals("2",t.say(2));
+        assertEquals("Fizz",t.say(3));
+        assertEquals("Buzz",t.say(5));
+        assertEquals("Fizz",t.say(6));
+        assertEquals("Buzz",t.say(10));
+        assertEquals("FizzBuzz",t.say(15));
+        
+    }
+    
+    
 
 }

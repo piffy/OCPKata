@@ -9,18 +9,18 @@ package ocpdecorations;
  *
  * @author piffy
  */
-public class Three extends Checker {
+public class Five extends Checker {
     
     Teller t;
 
-    public Three(Teller t) {
+    public Five(Teller t) {
         this.t = t;
     }
 
     @Override
     public String say(int i) {
-        if (i%3==0)
-            return "Fizz";
+        if (i%5==0)
+            return "Buzz";
                     else
         return t.say(i);
         }
