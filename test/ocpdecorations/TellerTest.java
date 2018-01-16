@@ -44,4 +44,10 @@ public class TellerTest {
         assertEquals("2",t.say(2));
     }
     
+    @Test
+    public void testThrees() {
+        Teller t= new Teller();
+        assertEquals("Fizz",t.say(3));
+        assertEquals("Fizz",t.say(6));
+    }
 }
