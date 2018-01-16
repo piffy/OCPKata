@@ -9,23 +9,29 @@ package ocpdecorations;
  *
  * @author piffy
  */
-public class Five extends Checker {
-    
+public class RegolaConcreta extends Checker {
+    int divisore;
+    String parola;
     Teller t;
 
-    public Five(Teller t) {
+    public RegolaConcreta(Teller t,int divisore, String parola) {
+        this.divisore = divisore;
         this.t = t;
+        this.parola = parola;
     }
+    
+    
 
     @Override
     public String say(int i) {
-        if (i%5==0) {
-            return "Buzz";
-        }
-                    else
+        if (i%divisore==0)
+           {
+            return parola;
+           }
+                    else   
         return t.say(i);
         }
-    
-    
-    
+
+   
+       
 }

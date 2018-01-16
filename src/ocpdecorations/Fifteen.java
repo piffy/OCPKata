@@ -23,7 +23,6 @@ public class Fifteen extends Checker {
     public String say(int i) {
         if (i%15==0)
            {
-            t.activated=true;
             return "FizzBuzz";
            }
                     else   

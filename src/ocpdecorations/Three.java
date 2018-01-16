@@ -23,8 +23,7 @@ public class Three extends Checker {
     public String say(int i) {
         if (i%3==0)
            {
-            t.activated=true;
-            return "Fizz"+t.say(i);
+            return "Fizz";
            }
                     else   
         return t.say(i);
