@@ -55,9 +55,9 @@ public class TellerTest {
     @Test
     public void testFives() {
         Teller t= new ConcreteTeller();
-        t= new Fives(t);
+        t= new Five(t);
         assertEquals("Buzz",t.say(5));
-        assertEquals("Buzz",t.say(6));
+        assertEquals("Buzz",t.say(10));
     }
 
 }
