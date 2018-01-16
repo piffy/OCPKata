@@ -69,6 +69,7 @@ public class TellerTest {
         Teller t= new ConcreteTeller();
         t= new Three(t);
         t= new Five(t);
+        t= new Fifteen(t);
         assertEquals("1",t.say(1));
         assertEquals("2",t.say(2));
         assertEquals("Fizz",t.say(3));
@@ -76,6 +77,7 @@ public class TellerTest {
         assertEquals("Fizz",t.say(6));
         assertEquals("Buzz",t.say(10));
         assertEquals("FizzBuzz",t.say(15));
+        assertEquals("FizzBuzz",t.say(60));
         
     }
     

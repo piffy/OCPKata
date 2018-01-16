@@ -12,6 +12,7 @@ public class ConcreteTeller extends Teller {
 
     @Override
     public String say(int i) {
+        if (activated) return "";
         return ""+i;
     }
     
