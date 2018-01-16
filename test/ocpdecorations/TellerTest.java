@@ -41,6 +41,7 @@ public class TellerTest {
     public void testNumbers() {
         Teller t= new Teller();
         assertEquals("1",t.say(1));
+        assertEquals("2",t.say(2));
     }
     
 }

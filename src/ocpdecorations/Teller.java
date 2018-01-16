@@ -9,5 +9,9 @@ package ocpdecorations;
  * @author piffy
  */
 public class Teller {
+
+    String say(int i) {
+        return ""+i;
+    }
     
 }
